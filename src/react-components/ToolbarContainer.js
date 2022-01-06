@@ -16,7 +16,8 @@ function dispatchExportAvatar() {
 export function ToolbarContainer({ onGLBUploaded, randomizeConfig }) {
   return (
     <Toolbar>
-      <span className="appName">Hackweek Avatar Maker</span>
+      <span className="appName">Avatares VROOM</span>
+      <span className="appName">by Mozilla Hubs</span>
       <MoreMenu
         items={
           <>
@@ -27,10 +28,10 @@ export function ToolbarContainer({ onGLBUploaded, randomizeConfig }) {
           </>
         }
       ></MoreMenu>
-      <button onClick={randomizeConfig}>Randomize avatar</button>
-      <button onClick={dispatchResetView}>Reset camera view</button>
+      <button onClick={randomizeConfig}>Aleatório</button>
+      <button onClick={dispatchResetView}>Centralizar câmera</button>
       <button onClick={dispatchExportAvatar} className="primary">
-        Export avatar
+        Exportar avatar
       </button>
     </Toolbar>
   );
